@@ -10,7 +10,7 @@ function obtenerMayor(x, y) {
       } else if (x < y){
       return y;
       } else {
-         return x || y;;
+         return x;
       }
 }
 
@@ -112,11 +112,8 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 1 === 0){
-      return true;
-   } else {
-      return false;
-   }
+   num = Number.isInteger(num);
+   return num;
 }
 
 function fizzBuzz(num) {
