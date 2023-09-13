@@ -21,9 +21,8 @@ function mayoriaDeEdad(edad) {
    // Tu código:
    if (edad >= 18){
       return "Allowed";
-   } else {
-      return "Not allowed";
-   }
+   } return "Not allowed";
+   
 }
 
 function conection(status) {
@@ -129,7 +128,7 @@ function fizzBuzz(num) {
          return "fizz";
       case (num % 5 === 0):
          return "buzz";
-      default:
+         default:
          return false;
    }
 }
